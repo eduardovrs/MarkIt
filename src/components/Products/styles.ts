@@ -3,37 +3,34 @@ import {colors} from '../../utils/colors';
 
 export const styles = StyleSheet.create({
   container: {
-    height: '30%',
-    width: '30%',
+    height: '10%',
+    width: '90%',
+    flexDirection: 'row',
+    backgroundColor: 'pink',
+    borderBottomWidth: 1,
+    borderBottomColor: colors.gray,
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   imageStyles: {
     height: '60%',
     width: '100%',
   },
-  bottomContainer: {
-    height: '40%',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-  },
   textContainer: {
-    marginTop: 5,
-    paddingLeft: 5,
-    justifyContent: 'space-evenly',
+    justifyContent: 'center',
   },
   productNameText: {
-    fontSize: 21,
-    lineHeight: 24,
+    fontSize: 18,
     fontWeight: '700',
     color: colors.black,
+    alignSelf: 'flex-start',
   },
   productAmountText: {
-    fontSize: 16,
-    lineHeight: 21,
+    fontSize: 14,
     color: colors.gray,
   },
   productPriceText: {
-    fontSize: 18,
-    lineHeight: 20,
+    fontSize: 16,
     fontWeight: '700',
     color: colors.black,
   },

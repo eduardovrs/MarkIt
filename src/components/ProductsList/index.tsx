@@ -7,15 +7,13 @@ export default function ProductsList({products}: IProductsListProps) {
   const renderProducts = React.useMemo(() => {
     return products.map((item, index) => {
       return (
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          <Products
-            key={index}
-            name={item.name}
-            price={item.price}
-            amount={item.amount}
-            type={item.type}
-          />
-        </ScrollView>
+        <Products
+          key={index}
+          name={item.name}
+          price={item.price}
+          amount={item.amount}
+          type={item.type}
+        />
       );
     });
   }, [products]);
